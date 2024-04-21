@@ -27,7 +27,7 @@ function Projectdata() {
       <div className='h-80 flex justify-center'>
         
         {myProjects.map(p =>(
-            <div className='w-80 rounded-xl shadow-lg  m-8 flex flex-col justify-between hover:scale-110 hover:border-4 hover:border-slate-200'>
+            <div key={p.id} className='w-80 rounded-xl shadow-lg  m-8 flex flex-col justify-between hover:scale-110 hover:border-4 hover:border-slate-200'>
               <div > 
                   <div className='text-center text-2xl font-medium m-4'>{p.projectname}</div>
                   <div className='m-4 '>{p.body}</div>
